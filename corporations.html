@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Corporations</title>
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    </head>
+    <body>
+         <!-- Header section -->
+        <header>
+            <a href="#"><img src="Images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html" id="logotext">Patriot Watch</a>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="corporations.html">Corporations</a>
+                <li><a href="blackhats.html">Blackhats</a>
+                <li><a href="government.html">Government</a>
+                <li><a href="contact.html">Contact Us</a></li> 
+            </ul>
+        </header>
+        <section>
+            <img src="Images/Background 0.png" alt="background" class="stars_behind" id="stars_behind">
+            <h2 id="text">Corporate Influence on User Data<br>Privacy in a new age?</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="Images/desk.png" alt="desk" id="desk_infront">
+            <div class="section2"></div>
+        </section>
+        <div class="sec" id="sec">
+            <!-- Corporation content section -->
+            <h2><br>What is User Data?</h2>
+                <p>In today's digital era, your personal data has become a prized possession
+                    for corporations. They're using it to create custom experiences and targeted marketing.
+                    But, as they dig deeper into your information, it brings up a crucial issue – the balance 
+                    between enjoying personalized benefits and keeping your privacy intact.
+                    this organisations founding mission is to enhance public awareness regarding
+                    the utmost significance of their digital presence and to furnish them with
+                    the knowledge and tools required for safeguarding their online rights,
+                    security, and privacy. Our unwavering dedication is directed towards
+                    nurturing a digital realm where individuals can flourish without the
+                    apprehension of cyber threats, intrusion, or undue surveillance.</p>
+            <h2><br>How does this affect me?</h2>
+                <p> In the modern digital landscape, large corporations have a keen interest in 
+                    gathering your personal information in order to create personalized experiences 
+                    and improve their marketing strategies. However, this practice raises some concerns 
+                    because it also involves accessing your private data. You might recall the situation 
+                    involving Facebook and Cambridge Analytica, where people's data was used to 
+                    manipulate their opinions. Additionally, those ubiquitous ads that appear 
+                    everywhere are a result of companies monitoring your online activities. 
+                    Occasionally, there are instances of mishaps, like the data breaches that 
+                    affected Equifax and Yahoo, leading to the unintentional exposure of private 
+                    information.<br><br>These occurrences have significant implications beyond mere 
+                    inconvenience. They intrude upon our personal freedom and safety. Consequently, 
+                    it's crucial to address the issue of companies potentially exploiting our data. 
+                    Striking a balance between utilizing data for innovative purposes and safeguarding 
+                    our privacy and security has become a pressing matter that requires careful 
+                    consideration.</p>
+            <h2><br>What can I do?</h2>
+                <p> In today's digital world, dealing with our personal info and big companies 
+                    can be overwhelming, but there are practical things we can do to protect our 
+                    privacy. Privacy settings on social media and apps let us control what we 
+                    share and with whom. Reviewing and adjusting these settings regularly is a 
+                    good idea. Think twice before sharing everything online to avoid privacy 
+                    risks. Using strong, unique passwords for our online accounts helps a lot, 
+                    and there are tools like password managers to help remember them. Be careful 
+                    when giving apps permission to use your data – only share what's necessary 
+                    and revoke access for unused apps. Understanding data privacy rights and 
+                    learning how our data is collected and used keeps us informed and in control.
+                    <br><br>Two-factor authentication adds extra security to your accounts. 
+                    Using privacy-focused tools like special web browsers and email services 
+                    can keep your information more secure. Keeping devices and apps updated 
+                    is important for security fixes. Avoid using public Wi-Fi for sensitive 
+                    tasks to prevent hackers from accessing your data. If you want to make a 
+                    bigger impact, you can get into advocacy – supporting efforts for stronger 
+                    data protection rules through campaigns and contacting officials to voice 
+                    your concerns. Even though big companies still handle our data, making 
+                    informed choices and advocating for better privacy practices can help 
+                    shape our digital lives.</p>
+            <footer>
+                <!-- Footer section -->
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    <li><a href="corporations.html">Corporations</a>
+                    <li><a href="blackhats.html">Blackhats</a>
+                    <li><a href="government.html">Government</a>
+                    <li><a href="contact.html">Contact Us</a></li> 
+                    <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="facebook" class="footer-image"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="instagram" class="footer-image"></a></li>
+                    <li><a href="https://www.threads.net/?hl=en"><img src="Images/threads.png" alt="threads" class="footer-image"></a></li>
+                </ul>   
+            </footer>
+            </div>
+            <!-- JavaScript for parallax effect -->
+            <script>
+                let stars_behind = document.getElementById('stars_behind');
+                let earth_infront = document.getElementById('earth_infront');
+                let text = document.getElementById('text');
+                let btn = document.getElementById('btn');
+    
+                window.addEventListener('scroll', function(){
+                    let value = window.scrollY;
+                    stars_behind.style.left = value * 0.25 + 'px';
+                    text.style.left = value * 1 + 'px';
+                    btn.style.left = value * 1 + "px";
+                })
+            </script>
+        </body>
+    </html>
