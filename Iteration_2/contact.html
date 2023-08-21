@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact Us</title>
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    </head>
+    <body>
+         <!-- Header section -->
+        <header>
+            <a href="index.html"><img src="Images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html" id="logotext">Patriot Watch</a>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="corporations.html">Corporations</a>
+                <li><a href="blackhats.html">Blackhats</a>
+                <li><a href="government.html">Government</a>
+                <li><a href="contact.html">Contact Us</a></li> 
+            </ul>
+        </header>
+        <section>
+            <img src="Images/background 4.png" alt="background" class="stars_behind" id="stars_behind">
+            <h2 id="text">Have a message for<br>us?</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="Images/phone.png" alt="background" id="phone_infront">
+            <div class="section2"></div>
+        </section>
+        <div class="sec" id="sec">
+            <!-- Contact content section -->
+            <h2><br>Get in contact with us!</h2>
+                <p>We warmly welcome you to reach out and connect with us. Whether you have 
+                    inquiries, suggestions, or simply want to engage in meaningful conversation, 
+                    we're here to listen and respond. Your thoughts are important to us, and we 
+                    value the opportunity to establish a connection. Feel free to contact us 
+                    through the provided channels, and our dedicated team will be delighted 
+                    to assist you. Together, we can explore new ideas, address your concerns, 
+                    and build a bridge of communication that enriches both our understanding 
+                    and your experience.</h2>
+                <div class="contact_container">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="contact-text" id="name" placeholder="Your Name" required>
+                        <input type="contact-text" id="email" placeholder="Your Email" required>
+                        <input type="contact-text" id="phone" placeholder="Phone no." required>
+                        <textarea id="message" placeholder="How can we help you?"></textarea>
+                        <button type="submit" id="msgsubmit"><img src="Images/send.png" alt="send"></button>
+                        <img src="Images/logo.png" alt="logo" id="contact-logo"></div>
+                    <h2 id="contact-title">Patriot Watch<br>Contact Support</h2>
+                    </form>
+                </div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail()
+                        Email.send({
+                            SecureToken : "5101da29-fc97-47b2-86f8-d2b36a5ac9f3",
+                            To : 'davisj3443@gmail.com',
+                            From : "davisj3443@gmail.com",
+                            Subject : "Contact Inquiry",
+                            Body : "And this is the body"
+                        }).then(
+                        message => alert(message)
+                        );
+                </script>
+        <footer>
+            <!-- Footer section -->
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="corporations.html">Corporations</a>
+                <li><a href="blackhats.html">Blackhats</a>
+                <li><a href="government.html">Government</a>
+                <li><a href="contact.html">Contact Us</a></li> 
+                <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="facebook" class="footer-image"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="instagram" class="footer-image"></a></li>
+                <li><a href="https://www.threads.net/?hl=en"><img src="Images/threads.png" alt="threads" class="footer-image"></a></li>
+            </ul>   
+        </footer>
+        </div>
+        <!-- JavaScript for parallax effect -->
+        <script>
+            let stars_behind = document.getElementById('stars_behind');
+            let earth_infront = document.getElementById('earth_infront');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars_behind.style.left = value * 0.25 + 'px';
+                text.style.left = value * 1 + 'px';
+                btn.style.left = value * 1 + "px";
+            })
+        </script>
+    </body>
+</html>

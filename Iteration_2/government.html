@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Government</title>
+    <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    </head>
+    <body>
+         <!-- Header section -->
+        <header>
+            <a href="#"><img src="Images/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html" id="logotext">Patriot Watch</a>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="corporations.html">Corporations</a>
+                <li><a href="blackhats.html">Blackhats</a>
+                <li><a href="government.html">Government</a>
+                <li><a href="contact.html">Contact Us</a></li> 
+            </ul>
+        </header>
+        <section>
+            <img src="Images/Background 2.png" alt="background" id="stars_behind">
+            <h2 id="text">Digital Surveillance in<br>the modern era:</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="Images/camera.png" alt="camera" id="camera_infront">
+            <div class="section2"></div>
+        </section>
+        <div class="sec" id="sec">
+            <!-- Digital Survellience content section -->
+            <h2><br>What is Digital Surveillance?</h2>
+                <p>In our interconnected world, government surveillance threatens privacy and personal 
+                    autonomy, turning tools meant for empowerment into conduits for overreach. Advanced 
+                    technology blurs the line between protection and intrusion, as agencies use digital 
+                    tools to breach online liberties. This discourse sheds light on unchecked 
+                    surveillance's peril and urges safeguarding digital freedoms.<br><br>Amidst personal 
+                    expression's realm, governments, like hackers, exploit vulnerabilities, 
+                    breaching digital privacy and security. This initiative aims to raise public 
+                    awareness about this intrusion, empowering individuals to shield their online 
+                    lives. We strive to create a digital space free from constant monitoring and 
+                    exposure, equipping citizens to protect their online presence and defending 
+                    autonomy.</p>
+            <h2><br>How does this affect me?</h2>
+                <p> In the ever-evolving digital landscape, government digital surveillance is 
+                    underscored by compelling real-world examples that resonate on a global scale. 
+                    Just as corporations seek personalized data, governments across the world engage 
+                    in intricate data collection endeavors, exerting a significant impact on personal 
+                    autonomy. Edward Snowden's disclosure of the United States' National Security 
+                    Agency (NSA) surveillance programs brought to light the erosion of privacy, 
+                    sparking crucial discussions about the intricate balance between security and 
+                    individual liberties.<br><br>Meanwhile, China's extensive surveillance system, employing 
+                    facial recognition and the "Social Credit System," blurs the boundary between 
+                    state control and private life, offering a tangible illustration of the potential 
+                    consequences of unchecked digital surveillance. Additionally, Russia's 
+                    manipulation of information and control over internet access serves as a stark 
+                    reminder of how governments can harness digital tools for surveillance and 
+                    information warfare, shaping the digital landscape in ways that reverberate 
+                    globally.</p>
+            <h2><br>What can I do?</h2>
+                <p> In the contemporary digital landscape, safeguarding your digital rights amidst 
+                    potential government surveillance demands proactive engagement. Start by 
+                    acquainting yourself with your country's privacy laws and surveillance practices 
+                    to make informed choices. Employ encryption tools for secure online communication, 
+                    and be cautious about sharing personal information. Prioritize services that 
+                    prioritize data security, and enhance device protection through regular updates, 
+                    strong passwords, and careful app permission management. Virtual private networks 
+                    (VPNs) can add an extra layer of privacy.
+                    <br><br>Participating in discussions about digital rights, advocating for change, 
+                    and voicing your concerns to elected representatives can shape policy decisions. 
+                    Supporting privacy-focused organizations amplifies collective efforts. Employ secure 
+                    browsing practices, such as using HTTPS websites, managing location services, and 
+                    being vigilant on public Wi-Fi. Regularly auditing and eliminating unnecessary apps 
+                    and services minimizes risks. While no approach guarantees absolute security, these 
+                    measures empower you to navigate the digital realm, upholding privacy and digital 
+                    rights in the face of potential government surveillance.</p>
+        <footer>
+            <!-- Footer section -->
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li><a href="corporations.html">Corporations</a>
+                <li><a href="blackhats.html">Blackhats</a>
+                <li><a href="government.html">Government</a>
+                <li><a href="contact.html">Contact Us</a></li> 
+                <li><a href="https://www.facebook.com/"><img src="Images/facebook.png" alt="facebook" class="footer-image"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/instagram.png" alt="instagram" class="footer-image"></a></li>
+                <li><a href="https://www.threads.net/?hl=en"><img src="Images/threads.png" alt="threads" class="footer-image"></a></li>
+            </ul>   
+        </footer>
+        </div>
+        <!-- JavaScript for parallax effect -->
+        <script>
+            let stars_behind = document.getElementById('stars_behind');
+            let earth_infront = document.getElementById('earth_infront');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars_behind.style.left = value * 0.25 + 'px';
+                text.style.left = value * 1 + 'px';
+                btn.style.left = value * 1 + "px";
+            })
+        </script>
+    </body>
+</html>
